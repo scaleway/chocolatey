@@ -21,9 +21,7 @@ jobs:
           - scaleway-cli
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: master
+      - uses: actions/checkout@v3
 
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name AU -Force
