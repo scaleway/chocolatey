@@ -28,6 +28,9 @@ jobs:
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name AU -Force
 
+      - name: Install Powershell GetRedirectedURL
+        run: Install-Module -Name GetRedirectedURL -Force
+
       - name: Run ${{ matrix.package }} update script
         id: update
         run: |
