@@ -39,6 +39,12 @@ jobs:
           $UpdateStatus = if ($UpdateOutput.Result -match 'No new version found') {'No Update'} else {'Update Available'}
           Write-Host "::set-output name=UpdateStatus::$UpdateStatus"
 
+      - name: Upload ${{ matrix.package }} nupkg
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.package }}-nupkg
+          path: ${{ steps.update.outputs.NupkgPath }}
+
       - name: Test ${{ matrix.package }} install
         run: Test-Package -Install -Nu ${{ steps.update.outputs.NupkgPath }}
         if: steps.update.outputs.UpdateStatus == 'Update Available'
