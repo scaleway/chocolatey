@@ -1,5 +1,5 @@
 import-module au
-. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), "_scripts", "Get-GithubLatestReleaseLinks.ps1"))
+. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), "..", "_scripts", "Get-GithubLatestReleaseLinks.ps1"))
 
 
 function global:au_SearchReplace {
