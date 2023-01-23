@@ -1,0 +1,22 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to
+   x86: https://github.com/scaleway/scaleway-cli/releases/download/v2.5.6/scaleway-cli_2.5.6_windows_386.exe
+   x64: https://github.com/scaleway/scaleway-cli/releases/download/v2.5.6/scaleway-cli_2.5.6_windows_amd64.exe
+
+   to download the binary.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+   checksum64: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+
+File 'license.txt' is obtained from:
+   from https://github.com/scaleway/scaleway-cli/blob/master/LICENSE

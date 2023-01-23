@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/src/NuGet.Core/NuGet.Packaging/compiler/resources/nuspec.xsd">
+  <metadata>
+    <id>scaleway-cli</id>
+    <version>2.5.6</version>
+    <packageSourceUrl>https://github.com/scaleway/chocolatey/tree/master/scaleway-cli</packageSourceUrl>
+    <owners>Nathanael Demacon</owners>
+    <authors>Scaleway</authors>
+    <title>scaleway-cli (Install)</title>
+    <projectUrl>https://github.com/scaleway/scaleway-cli</projectUrl>
+    <copyright>Scaleway</copyright>
+    <licenseUrl>https://github.com/scaleway/scaleway-cli/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance> <!-- Apache, assume acceptance -->
+    <projectSourceUrl>https://github.com/scaleway/scaleway-cli</projectSourceUrl>
+    <releaseNotes>https://github.com/scaleway/scaleway-cli/blob/master/CHANGELOG.md</releaseNotes>
+    <iconUrl>https://raw.githubusercontent.com/scaleway/scaleway-cli/master/docs/static_files/cli-artwork.png</iconUrl>
+    <tags>scaleway-cli scaleway scw</tags>
+    <summary>Interact with Scaleway API from the command line.</summary>
+    <description>
+    Let's you work against the Scaleway APIs from the command line.
+    See [github](https://github.com/scaleway/scaleway-cli) for usage details
+
+
+    **Please Note**: This is an automatically updated package. If you find it is 
+    out of date by more than a day or two, please contact the maintainer(s) and
+    let them know the package is no longer updating correctly.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**.ps1" target="tools" />
+    <file src="tools\**.ps1" target="legal" />
+  </files>
+</package>
