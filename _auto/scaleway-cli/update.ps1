@@ -13,7 +13,7 @@ function global:au_SearchReplace {
         ".\tools\chocolateyinstall.ps1" = @{
             "(^[$]version\s*=\s*)("".*"")" = "`$1""$($Latest.Version)"""
         }
-        ".\sshs.nuspec"                 = @{
+        ".\scaleway-cli.nuspec"         = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
         }
     }
