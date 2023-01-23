@@ -15,6 +15,7 @@ jobs:
     runs-on: windows-latest
 
     strategy:
+      max-parallel: 1
       matrix:
         package:
           - scaleway-cli
