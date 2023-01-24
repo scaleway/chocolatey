@@ -6,4 +6,6 @@ This repository contains the Chocolatey packages for Scaleway.
 
 ## Packages
 
-- [scaleway-cli](https://github.com/scaleway/scaleway-cli)
+* **scaleway-cli**
+  * [Repository](https://github.com/scaleway/scaleway-cli)
+  * [Chocolatey](https://chocolatey.org/packages/scaleway-cli)
