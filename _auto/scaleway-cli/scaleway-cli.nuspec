@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>scaleway-cli</id>
-    <version>2.9.0</version>
+    <version>2.10.0</version>
     <packageSourceUrl>https://github.com/scaleway/chocolatey/tree/master/_auto/scaleway-cli</packageSourceUrl>
     <owners>Nathanael Demacon</owners>
     <authors>Scaleway</authors>
@@ -12,7 +12,7 @@
     <licenseUrl>https://github.com/scaleway/scaleway-cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance> <!-- Apache, assume acceptance -->
     <projectSourceUrl>https://github.com/scaleway/scaleway-cli</projectSourceUrl>
-    <releaseNotes>https://github.com/scaleway/scaleway-cli/releases/tag/v2.9.0</releaseNotes>
+    <releaseNotes>https://github.com/scaleway/scaleway-cli/releases/tag/v2.10.0</releaseNotes>
     <iconUrl>https://raw.githubusercontent.com/scaleway/scaleway-cli/master/docs/static_files/cli-artwork.png</iconUrl>
     <tags>scaleway-cli scaleway scw</tags>
     <summary>Interact with Scaleway API from the command line.</summary>
