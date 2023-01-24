@@ -27,6 +27,7 @@
     </description>
   </metadata>
   <files>
-    <file src="tools\**.ps1" target="tools" />
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
