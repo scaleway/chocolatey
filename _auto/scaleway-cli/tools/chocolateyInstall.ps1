@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$version = "2.11.1"
+$version = "2.12.0"
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $removeFile = "$toolsDir\scaleway-cli_${version}_windows_386.exe"
 $renameFile = "$toolsDir\scaleway-cli_${version}_windows_amd64.exe"
