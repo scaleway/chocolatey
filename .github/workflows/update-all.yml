@@ -5,12 +5,15 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  actions: write
+
 defaults:
   run:
     shell: pwsh
 
 jobs:
-  update_choco_auto:
+  update:
     name: Update ${{ matrix.package }}
     runs-on: windows-latest
 
@@ -21,7 +24,7 @@ jobs:
           - scaleway-cli
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name AU -Force
@@ -52,8 +55,10 @@ jobs:
         if: steps.update.outputs.UpdateStatus == 'Update Available'
 
       - name: Commit Updated nuspec
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply Choco package update - ${{ matrix.package }} ${{ steps.update.outputs.newversion }}
           file_pattern: "*.nuspec *.ps1"
         if: steps.update.outputs.UpdateStatus == 'Update Available'
+
+      - uses: gautamkrishnar/keepalive-workflow@v2
